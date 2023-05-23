@@ -502,33 +502,19 @@ ul.dropdown-menu.show{
   background-position: center;
 }
 
-.fecha {
-  font-family: "Teko", sans-serif;
-  color: rgb(255, 1, 1);
-  display: inline-block;
-  margin-left: 340px;
-  margin-top: 20px;
-  padding-right: 50px;
-  font-size: 1.5rem;
-  margin-bottom: 30px;
-}
 
-.lugar {
+.container-shows {
   font-family: "Teko", sans-serif;
   color: white;
-  display: inline-block;
-  padding-right: 50px;
+  font-weight: 300; 
   font-size: 1.5rem;
-  margin-left: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  
 }
 
-.ubicacion {
-  font-family: "Teko", sans-serif;
-  color: white;
-  display: inline-block;
-  font-size: 1.5rem;
-  margin-left: 150px;
-}
+
 
 /* CONTACTO */
 
