@@ -361,9 +361,8 @@ header {
   justify-content: center;
 }
 
-
-.container-videos-grid.container.row.col-sm-12, .col-lg-4 iframe{
-  
+.container-videos-grid.container.row.col-sm-12,
+.col-lg-4 iframe {
   width: 350px;
   height: 200px;
   padding: 0px 10px;
@@ -371,7 +370,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .visual-fotos-text {
@@ -383,14 +381,11 @@ header {
   font-weight: 400;
   color: white;
   letter-spacing: 2px;
-  
 }
 
-.carousel-inner{
+.carousel-inner {
   margin-top: 10px;
 }
-
-
 
 /*MUSICA*/
 
@@ -421,30 +416,23 @@ header {
   margin-left: 120px;
 }
 
-.card{
+.card {
   width: 13rem;
-  
-  background-color: rgb(31, 30, 30)
-  
-} 
-.card img{
+
+  background-color: rgb(31, 30, 30);
+}
+.card img {
   padding: 15px;
   border-radius: 20px;
-  
-
 }
 
-.card-body{
+.card-body {
   margin-top: -20px;
-  
 }
 
-.card-body p{
+.card-body p {
   color: rgb(199, 199, 199);
 }
-
-  
-
 
 .sencillos-ep-title {
   border: 5px solid #d21312;
@@ -459,36 +447,32 @@ header {
   font-size: 1.3rem;
 }
 
-.card-sencillos-ep .row{
-  display:inline-flex;
+.card-sencillos-ep .row {
+  display: inline-flex;
   margin-left: 108px;
 }
 
- .card-sencillos-ep{
+.card-sencillos-ep {
   margin-bottom: 50px;
-} 
-
-.dropdown-menu{
-  background-color: rgba(17, 17, 17, 0.897);
-  color: white;
-  
-   
 }
 
-ul.dropdown-menu.show{
+.dropdown-menu {
+  background-color: rgba(17, 17, 17, 0.897);
+  color: white;
+}
+
+ul.dropdown-menu.show {
   inset: none;
 }
 
-
-.dropdown-menu li a{
+.dropdown-menu li a {
   color: white;
 }
 
-.dropup-center .btn{
+.dropup-center .btn {
   background-color: rgba(19, 19, 19, 0.692);
   border-color: rgba(19, 19, 19, 0.692);
 }
-
 
 /*SHOWS*/
 
@@ -502,19 +486,14 @@ ul.dropdown-menu.show{
   background-position: center;
 }
 
-
 .container-shows {
   font-family: "Teko", sans-serif;
   color: white;
-  font-weight: 300; 
+  font-weight: 300;
   font-size: 1.5rem;
   margin-top: 50px;
   margin-bottom: 50px;
-
-  
 }
-
-
 
 /* CONTACTO */
 
@@ -528,7 +507,7 @@ ul.dropdown-menu.show{
   background-position: center;
 }
 
-form.row{
+form.row {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -538,20 +517,18 @@ form.row{
   padding-top: 20px;
   font-family: "Teko", sans-serif;
   font-size: 1.5rem;
-
 }
 
-#message{
+#message {
   padding-bottom: 100px;
 }
 
 button.btn.btn-primary {
-  background-color: #d21312 ;
+  background-color: #d21312;
   border-color: #d21312;
   padding: 2px 248px;
   font-size: 1.3rem;
 }
-
 
 /*footer*/
 
@@ -579,8 +556,6 @@ footer {
 
 /*mobile*/
 @media only screen and (max-width: 768px) {
-  
-  
   /*index*/
 
   .navbar-toggler {
@@ -710,99 +685,69 @@ footer {
     height: 80vh;
   }
 
+  .video-container-visual-principal iframe {
+    width: 500px;
+    height: 300px;
+    margin-top: 0;
+  }
 
-.video-container-visual-principal iframe {
-  width: 500px;
-  height: 300px;
-  margin-top: 0;
+  .container-videos-grid {
+    margin-top: 30px;
+  }
 
+  .row {
+    justify-content: center;
+  }
 
+  .col-sm-12,
+  .col-lg-4 iframe {
+    width: 500px;
+    height: 200px;
+    padding: 10px 0px;
+    border-radius: 10px;
+  }
 
+  .title-visual {
+    margin-left: 30px;
+    padding-top: 30px;
+    text-align: left;
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    color: #d21312;
+    font-weight: 500;
+    margin-bottom: -5px;
+  }
 
-}
+  .subtitle-visual {
+    margin-left: 32px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 1.3rem;
+  }
 
-.container-videos-grid{
-  margin-top: 30px;
-}
+  .visual-videos-text {
+    text-align: left;
+    margin-left: 32px;
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
 
+  .visual-fotos-text {
+    text-align: left;
+    padding: 0px;
+    font-size: 1.3rem;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: 400;
+  }
+  .carousel-inner {
+    margin-top: 10px;
+  }
 
-.row{
-  justify-content: center;
-  
+  /* musica */
 
-}
-
-.col-sm-12, .col-lg-4 iframe{
-  
-  width: 500px;
-  height: 200px;
-  padding: 10px 0px;
-  border-radius: 10px;
-  
-  
-  
-  
-}
-
-.title-visual {
-  margin-left: 30px;
-  padding-top: 30px;
-  text-align: left;
-  font-size: 2.5rem;
-  letter-spacing: 10px;
-  color: #d21312;
-  font-weight:500;
-  margin-bottom: -5px;
-}
-
-.subtitle-visual {
-  margin-left: 32px;
-  margin-bottom: 5px;
-  text-align: left;
-  font-size: 1.3rem;
-  
-  
-}
-
-.visual-videos-text {
-  text-align: left;
-  margin-left: 32px;
-  font-size: 1.3rem;
-  font-weight: 400;
-  
-
-}
-
-
-
-.visual-fotos-text {
-  text-align: left;
-  padding: 0px;
-  font-size: 1.3rem;
-  margin-left: 30px;
-  margin-top: 30px;
-  font-weight: 400;
-  
-  
- 
-
-}
-.carousel-inner{
-  margin-top: 10px;
-}
-
-
-/* musica */
-
-
-
-
-
-
-/*contacto*/
-button.btn.btn-primary {
-  
-  padding: 2px 120px;
-  
-}
+  /*contacto*/
+  button.btn.btn-primary {
+    padding: 2px 120px;
+  }
 }
