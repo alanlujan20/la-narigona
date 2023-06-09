@@ -173,7 +173,7 @@ header {
 
 .biografia-1 {
   width: 100wh;
-  background: url(../assets/img/bio-foto1.jpg) no-repeat;
+  background: url(../assets/img/bio-foto-1.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 0 5%;
@@ -196,7 +196,7 @@ header {
 .biografia-2 {
   height: 100%;
   padding: 100px;
-  background: url(../assets/img/bio-foto2.jpg) no-repeat;
+  background: url(../assets/img/bio-foto-2.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
