@@ -1,0 +1,30 @@
+/*SHOWS*/
+
+.nav-shows {
+  height: 80vh;
+  margin: 0%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/shows-banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container-shows {
+  font-family: "Teko", sans-serif;
+  color: $light-color;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 50px 0px;
+  margin-left: 15px;
+
+  .row {
+    background-color: rgba(3, 3, 3, 0.705);
+    margin: 5px 0px;
+    border-radius: 2px;
+
+    .fecha {
+      color: $main-color;
+      font-weight: 500;
+    }
+  }
+}

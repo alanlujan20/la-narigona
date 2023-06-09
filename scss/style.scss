@@ -1,0 +1,22 @@
+//imports base
+@import "base/vars";
+@import "base/utilities";
+@import "base/reset";
+
+//imports components
+@import "components/navbar";
+@import "components/footer";
+
+//imports layout
+@import "layout/index";
+@import "layout/biografia";
+@import "layout/contacto";
+@import "layout/musica";
+@import "layout/shows";
+@import "layout/visual";
+@import "layout/medias";
+
+//imports fonts
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;600&display=swap");

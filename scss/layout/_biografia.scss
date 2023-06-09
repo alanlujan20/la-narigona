@@ -1,0 +1,91 @@
+.nav-biografia {
+  height: 80vh;
+  margin: 0%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/bio-banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.title-bio {
+  padding-top: 50px;
+  margin-bottom: -5px;
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+.subtitle-bio {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: $main-color;
+}
+
+.biografia-1 {
+  width: 100wh;
+  background: url(../assets/img/bio-foto1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 5%;
+}
+
+.biografia-1-content {
+  max-width: 600px;
+  margin-left: 50px;
+
+  p {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    font-family: "Teko", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: lighter;
+  }
+}
+
+.biografia-2 {
+  height: 100%;
+  padding: 100px;
+  background: url(../assets/img/bio-foto2.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.biografia-2-content {
+  @include flex(center, center, none);
+
+  p {
+    margin-bottom: 0;
+    font-family: "Teko", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    margin-left: 600px;
+  }
+}
+
+.biografia-3 {
+  width: 100wh;
+  background: url(../assets/img/bio-foto3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0 5%;
+  padding-bottom: 50px;
+}
+
+.biografia-3-content {
+  max-width: 520px;
+  margin-left: 50px;
+  padding: 100px 0px;
+
+  p {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    font-family: "Teko", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: lighter;
+  }
+}

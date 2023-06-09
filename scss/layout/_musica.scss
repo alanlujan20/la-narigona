@@ -1,0 +1,87 @@
+/*MUSICA*/
+
+.nav-musica {
+  height: 80vh;
+  margin: 0%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/musica-banner.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.albumes-title {
+  background-color: #770909;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 40px 120px;
+  text-decoration: none;
+  color: $light-color;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.card-albumes {
+  margin-left: 120px;
+}
+
+.card {
+  width: 13rem;
+  background-color: rgb(14, 14, 14);
+  color: $light-color;
+  transition: 0.4s;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.712);
+
+  &:hover {
+    background-color: rgb(36, 36, 36);
+  }
+}
+.card img {
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.card-body {
+  margin-top: -20px;
+
+  p {
+    color: $light-color;
+  }
+}
+
+.sencillos-ep-title {
+  @extend .albumes-title;
+}
+
+.card-sencillos-ep {
+  margin-bottom: 50px;
+}
+.card-sencillos-ep .row {
+  display: inline-flex;
+  margin-left: 108px;
+}
+
+.dropdown-menu {
+  background-color: rgba(17, 17, 17, 0.897);
+  color: $light-color;
+}
+
+.dropdown-menu li a {
+  color: $light-color;
+}
+
+.dropup-center .btn {
+  background-color: #131313;
+  border-color: #131313;
+  color: #eeee;
+  font-size: 0.8rem;
+  transition: 0.4s;
+  font-weight: 600;
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: #770909;
+    font-weight: bold;
+  }
+}

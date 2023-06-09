@@ -1,0 +1,38 @@
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Bebas Neue", cursive;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  transition: 0.3s;
+  text-shadow: 0px 0px 8px rgb(0, 0, 0);
+
+  &:hover {
+    color: #f00606;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+  }
+}
+
+.navbar-collapse {
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand img {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  transition: 0.3s;
+  margin: 0px 30px;
+
+  &:hover {
+    width: 152px;
+    height: 152px;
+  }
+}
