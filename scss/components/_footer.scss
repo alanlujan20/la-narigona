@@ -11,24 +11,21 @@ footer {
     height: 40px;
     background: transparent;
     border: 2px solid white;
-    border-radius:  50%;
+    border-radius: 50%;
     font-size: 25px;
     color: white;
     text-decoration: none;
     margin: 0px 3px;
     margin-bottom: 10px;
-    transition: .5s;
+    transition: 0.5s;
 
-    &:hover{
+    &:hover {
       background: white;
-      color: $main-color; 
+      color: $main-color;
     }
-    
-
   }
   .copyright {
     color: white;
     font-family: "Roboto", sans-serif;
   }
 }
-
