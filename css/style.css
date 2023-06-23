@@ -72,13 +72,25 @@ footer {
   text-align: center;
   background-color: rgb(10, 10, 10);
 }
-footer .f-social-media img {
-  width: 50px;
-  height: 50px;
-  padding: 7px;
-  margin: 0px 3px;
+footer .f-social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-size: 25px;
   color: white;
-  margin-bottom: 5px;
+  text-decoration: none;
+  margin: 0px 3px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+footer .f-social-media a:hover {
+  background: white;
+  color: #d21312;
 }
 footer .copyright {
   color: white;
@@ -177,6 +189,7 @@ header {
   background-size: cover;
   background-position: center;
   padding: 0 5%;
+  overflow: hidden;
 }
 
 .biografia-1-content {
@@ -199,13 +212,14 @@ header {
   background: url(../assets/img/bio-foto-2.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .biografia-2-content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  flex-direction: none;
+  flex-direction: row;
 }
 .biografia-2-content p {
   margin-bottom: 0;
@@ -213,7 +227,7 @@ header {
   font-size: 1.3rem;
   letter-spacing: 2px;
   font-weight: lighter;
-  margin-left: 600px;
+  width: 48%;
 }
 
 .biografia-3 {
@@ -223,6 +237,7 @@ header {
   background-position: center;
   padding: 0 5%;
   padding-bottom: 50px;
+  overflow: hidden;
 }
 
 .biografia-3-content {
@@ -251,6 +266,7 @@ header {
 }
 
 form.row {
+  background-color: rgba(14, 14, 14, 0.582);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -260,6 +276,10 @@ form.row {
   padding-top: 20px;
   font-family: "Teko", sans-serif;
   font-size: 1.5rem;
+  color: white;
+}
+form.row .col-md-6 {
+  display: grid;
 }
 
 #message {
@@ -269,7 +289,7 @@ form.row {
 button.btn.btn-primary {
   background-color: #d21312;
   border-color: #d21312;
-  padding: 2px 248px;
+  padding: 2px;
   font-size: 1.3rem;
 }
 
@@ -474,14 +494,14 @@ button.btn.btn-primary {
 }
 
 /*MEDIA QUERIES*/
-/*mobile*/
-@media only screen and (max-width: 576px) {
+/*tablet*/
+@media only screen and (max-width: 768px) {
   /*index*/
   .nav-index {
-    height: 80vh;
+    height: 100vh;
   }
   .navbar-toggler {
-    z-index: 1;
+    z-index: 2;
   }
   .navbar-nav {
     flex-direction: column;
@@ -489,6 +509,7 @@ button.btn.btn-primary {
     justify-content: center;
   }
   .collapse {
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.548);
@@ -512,7 +533,184 @@ button.btn.btn-primary {
     align-items: center;
   }
   .video-container iframe {
+    width: 550px;
+    height: 380px;
+  }
+  /*biografia*/
+  .nav-biografia {
+    height: 60vh;
+  }
+  .title-bio,
+  .subtitle-bio {
+    display: flex;
+    justify-content: center;
+    letter-spacing: normal;
+  }
+  .biografia-1 {
+    background: transparent;
+    padding: 0 5%;
+  }
+  .biografia-1-content {
+    max-width: fit-content;
+    margin-left: 0;
+    text-align: justify;
+    align-items: center;
+  }
+  .biografia-1-content p {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  .biografia-2 {
+    background: transparent;
+    padding: 0 5%;
+  }
+  .biografia-2-content {
+    margin-left: 0;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+  }
+  .biografia-2-content p {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .biografia-3 {
+    background: transparent;
+    padding: 0 5%;
+  }
+  .biografia-3-content {
+    max-width: fit-content;
+    margin-left: 0;
+    text-align: justify;
+    align-items: center;
+    padding: 20px 0px;
+  }
+  .biografia-3-content p {
+    padding-top: 0px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  /*visual*/
+  .nav-visual {
+    height: 70vh;
+  }
+  .title-visual,
+  .subtitle-visual {
+    text-align: center;
+    margin: 0;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  .visual-fotos-text,
+  .visual-videos-text {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  .video-container-visual-principal iframe {
     width: 500px;
+    height: 300px;
+    margin-top: 0;
+  }
+  .container-videos-grid {
+    margin-top: 20px;
+  }
+  .container-videos-grid .row {
+    gap: 20px;
+    padding-left: 20px;
+  }
+  .container-videos-grid .container.row.col-sm-12,
+  .container-videos-grid .col-lg-4 iframe {
+    width: 500px;
+    height: 200px;
+    padding: 0px 20px;
+    border-radius: 10px;
+  }
+  .carousel-inner {
+    margin-top: 10px;
+  }
+  /* musica */
+  .nav-musica {
+    height: 50vh;
+  }
+  .albumes-title,
+  .sencillos-ep-title {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .card-albumes {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-sencillos-ep .row {
+    margin: 0px;
+  }
+  .card-sencillos-ep .row .col {
+    flex: 0.1 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*shows*/
+  .nav-shows {
+    height: 70vh;
+  }
+  /*contacto*/
+  form.row {
+    margin: 50px 50px;
+  }
+}
+/*mobile*/
+@media only screen and (max-width: 576px) {
+  /*index*/
+  .nav-index {
+    height: 80vh;
+  }
+  .navbar-toggler {
+    z-index: 2;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .collapse {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.548);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    backdrop-filter: blur(2px);
+    transition: all 0.5s;
+  }
+  .navbar-brand {
+    margin-right: 0;
+  }
+  .navbar-brand img {
+    width: 200px;
+    height: 200px;
+    display: flex;
+  }
+  .video-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .video-container iframe {
+    width: 400px;
     height: 280px;
   }
   /*biografia*/
@@ -523,6 +721,7 @@ button.btn.btn-primary {
   .subtitle-bio {
     display: flex;
     justify-content: center;
+    letter-spacing: normal;
   }
   .biografia-1 {
     background: transparent;
@@ -546,9 +745,11 @@ button.btn.btn-primary {
   .biografia-2-content {
     margin-left: 0;
     text-align: justify;
+    justify-content: center;
     align-items: center;
   }
   .biografia-2-content p {
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 0px;
     margin: 0;
@@ -567,7 +768,7 @@ button.btn.btn-primary {
   .biografia-3-content p {
     padding-top: 0px;
     padding-bottom: 50px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     font-size: 1rem;
   }
   /*visual*/
@@ -576,17 +777,22 @@ button.btn.btn-primary {
   }
   .title-visual,
   .subtitle-visual {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 3px;
+    text-align: center;
   }
   .visual-fotos-text,
   .visual-videos-text {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    text-align: center;
   }
   .video-container-visual-principal iframe {
-    width: 500px;
-    height: 300px;
+    width: 380px;
+    height: 250px;
     margin-top: 0;
   }
   .container-videos-grid {
@@ -598,35 +804,10 @@ button.btn.btn-primary {
   }
   .container-videos-grid .container.row.col-sm-12,
   .container-videos-grid .col-lg-4 iframe {
-    width: 500px;
+    width: 360px;
     height: 200px;
     padding: 0px 20px;
     border-radius: 10px;
-  }
-  .title-visual {
-    margin-left: 30px;
-    font-size: 2.5rem;
-    letter-spacing: 10px;
-    color: #d21312;
-    font-weight: 500;
-    margin-bottom: -5px;
-  }
-  .subtitle-visual {
-    margin-left: 32px;
-    font-size: 1.3rem;
-  }
-  .visual-videos-text, .visual-fotos-text {
-    text-align: left;
-    margin-left: 32px;
-    font-size: 1.3rem;
-  }
-  .visual-fotos-text {
-    text-align: left;
-    padding: 0px;
-    font-size: 1.3rem;
-    margin-left: 30px;
-    margin-top: 30px;
-    font-weight: 400;
   }
   .carousel-inner {
     margin-top: 10px;
@@ -635,13 +816,35 @@ button.btn.btn-primary {
   .nav-musica {
     height: 50vh;
   }
+  .albumes-title,
+  .sencillos-ep-title {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  .card-albumes {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-sencillos-ep .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .card-sencillos-ep .row .col {
+    display: contents;
+  }
   /*shows*/
   .nav-shows {
     height: 70vh;
   }
   /*contacto*/
-  button.btn.btn-primary {
-    padding: 2px 120px;
+  form.row {
+    margin: 50px 50px;
   }
 }
 

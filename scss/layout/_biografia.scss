@@ -5,6 +5,7 @@
   background-image: url(../assets/img/bio-banner.jpg);
   background-size: cover;
   background-position: center;
+  
 }
 
 .title-bio {
@@ -27,6 +28,7 @@
   background-size: cover;
   background-position: center;
   padding: 0 5%;
+  overflow: hidden;
 }
 
 .biografia-1-content {
@@ -50,10 +52,11 @@
   background: url(../assets/img/bio-foto-2.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .biografia-2-content {
-  @include flex(center, center, none);
+  @include flex(flex-end, center, row);
 
   p {
     margin-bottom: 0;
@@ -61,7 +64,8 @@
     font-size: 1.3rem;
     letter-spacing: 2px;
     font-weight: lighter;
-    margin-left: 600px;
+    width: 48%;
+    
   }
 }
 
@@ -72,6 +76,7 @@
   background-position: center;
   padding: 0 5%;
   padding-bottom: 50px;
+  overflow: hidden;
 }
 
 .biografia-3-content {
